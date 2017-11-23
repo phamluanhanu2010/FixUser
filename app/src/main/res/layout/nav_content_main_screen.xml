@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/nav_job_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_yellow_while"
+        android:gravity="center_vertical"
+        android:padding="@dimen/confirm_ui_padding_h_small">
+
+        <ImageView
+            android:layout_width="@dimen/size_icon_in_app"
+            android:layout_height="@dimen/size_icon_in_app"
+            android:focusable="false"
+            android:src="@drawable/ic_history_job" />
+
+        <TextView
+            style="@style/CusTextViewTitleTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:text="@string/nav_item_job_history"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_job_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_yellow_while"
+        android:gravity="center_vertical"
+        android:padding="@dimen/confirm_ui_padding_h_small">
+
+        <ImageView
+            android:layout_width="@dimen/size_icon_in_app"
+            android:layout_height="@dimen/size_icon_in_app"
+            android:focusable="false"
+            android:src="@drawable/ic_job_list" />
+
+        <TextView
+            style="@style/CusTextViewTitleTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:text="@string/nav_item_job_list"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_yellow_while"
+        android:gravity="center_vertical"
+        android:padding="@dimen/confirm_ui_padding_h_small">
+
+        <ImageView
+            android:layout_width="@dimen/size_icon_in_app"
+            android:layout_height="@dimen/size_icon_in_app"
+            android:focusable="false"
+            android:src="@drawable/ic_info" />
+
+        <TextView
+            style="@style/CusTextViewTitleTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:text="@string/title_dialog_message"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/img_no_feedback"
+            android:layout_width="@dimen/size_icon_in_app"
+            android:layout_height="@dimen/size_icon_in_app"
+            android:layout_marginRight="@dimen/confirm_ui_padding_w"
+            android:focusable="false"
+            android:visibility="visible"
+            android:src="@drawable/ic_history" />
+        <TextView
+            android:id="@+id/tv_badges"
+            android:layout_width="@dimen/size_icon_in_app"
+            android:layout_height="@dimen/size_icon_in_app"
+            android:padding="3dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="99"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:background="@drawable/notification_border"
+            android:textSize="@dimen/size_text_app_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_invite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_yellow_while"
+        android:gravity="center_vertical"
+        android:padding="@dimen/confirm_ui_padding_h_small">
+
+        <ImageView
+            android:layout_width="@dimen/size_icon_in_app"
+            android:layout_height="@dimen/size_icon_in_app"
+            android:focusable="false"
+            android:src="@drawable/ic_invite" />
+
+        <TextView
+            style="@style/CusTextViewTitleTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:text="@string/nav_item_invite"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_support"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_yellow_while"
+        android:gravity="center_vertical"
+        android:padding="@dimen/confirm_ui_padding_h_small">
+
+        <ImageView
+            android:layout_width="@dimen/size_icon_in_app"
+            android:layout_height="@dimen/size_icon_in_app"
+            android:focusable="false"
+            android:src="@drawable/ic_support" />
+
+        <TextView
+            style="@style/CusTextViewTitleTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:text="@string/nav_item_support"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_yellow_while"
+        android:gravity="center_vertical"
+        android:padding="@dimen/confirm_ui_padding_h_small">
+
+        <ImageView
+            android:layout_width="@dimen/size_icon_in_app"
+            android:layout_height="@dimen/size_icon_in_app"
+            android:focusable="false"
+            android:src="@drawable/ic_changepass" />
+
+        <TextView
+            style="@style/CusTextViewTitleTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:text="@string/btn_change_password"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

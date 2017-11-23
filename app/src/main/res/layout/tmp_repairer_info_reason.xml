@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/confirm_ui_padding_w">
+
+    <TextView
+        android:id="@+id/tv_reason"
+        style="@style/CusTextViewTitleTheme"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_icon_in_app_bar"
+        android:paddingLeft="@dimen/confirm_ui_padding_w"
+        android:paddingRight="@dimen/confirm_ui_padding_w"
+        android:text="Lý do 1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:layout_marginTop="@dimen/confirm_ui_padding_w"
+        android:background="@android:color/darker_gray" />
+</LinearLayout>

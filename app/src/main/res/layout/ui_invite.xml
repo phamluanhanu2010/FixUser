@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lout_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/bg_invite"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lout_Support_Titile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/padding"
+            android:background="@color/orange"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nav_History_Title"
+                style="@style/CusTextViewTitleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Mời bạn bè"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="@dimen/size_icon_in_app"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_back"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_Invite"
+            android:layout_width="@dimen/size_icon_in_app_menu"
+            android:layout_height="@dimen/size_icon_in_app_menu"
+            android:src="@drawable/icon_moilacoqua" />
+
+        <TextView
+            android:id="@+id/tv_Invite_Slogan"
+            style="@style/CusTextViewTitleTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding"
+            android:background="@drawable/button_border"
+            android:padding="@dimen/padding"
+            android:text="@string/nav_Invite_Titile" />
+
+        <TextView
+            android:id="@+id/tv_Invite_Guide"
+            style="@style/CusTextViewContentTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/nav_Invite_Guide" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lout_container_button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lout_header"
+        android:layout_marginTop="@dimen/size_text_rating"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/confirm_ui_padding_w"
+        android:paddingRight="@dimen/confirm_ui_padding_w">
+
+        <Button
+            android:id="@+id/btn_ShareFacebook"
+            style="@style/CusButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/confirm_ui_button_h"
+            android:background="@drawable/ripple_selector_blue"
+            android:drawableLeft="@drawable/icon_facebook"
+            android:drawableRight="@drawable/icon_next"
+            android:paddingLeft="@dimen/padding"
+            android:paddingRight="@dimen/padding"
+            android:text="@string/nav_Invite_FB"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_text_app_content"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/btn_InviteSMS"
+            style="@style/CusButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/confirm_ui_button_h"
+            android:background="@drawable/ripple_selector_green"
+            android:drawableLeft="@drawable/icon_chat"
+            android:drawableRight="@drawable/icon_next"
+            android:paddingLeft="@dimen/padding"
+            android:paddingRight="@dimen/padding"
+            android:text="@string/nav_Invite_SMS"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_text_app_content"
+            android:textStyle="normal"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            />
+
+        <Button
+            android:id="@+id/btn_Clipboard"
+            style="@style/CusButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/confirm_ui_button_h"
+            android:background="@drawable/ripple_selector_yellow"
+            android:drawableLeft="@drawable/icon_saochep"
+            android:drawableRight="@drawable/icon_next"
+            android:paddingLeft="@dimen/padding"
+            android:paddingRight="@dimen/padding"
+            android:text="@string/nav_Invite_Clipboard"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_text_app_content"
+            android:textStyle="normal"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

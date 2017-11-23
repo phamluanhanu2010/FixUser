@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/confirm_ui_padding_h"
+    android:background="@drawable/ripple_normal"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/confirm_ui_padding_h"
+    android:paddingTop="@dimen/confirm_ui_padding_h">
+
+
+
+
+    <CheckBox
+        android:id="@+id/check_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:clickable="false"
+        android:button="@drawable/selector_checkbox"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"/>
+    <ImageView
+        android:id="@+id/img_Tool"
+        style="@style/CusImageIconAppMenuTheme"
+        android:padding="@dimen/confirm_ui_padding_h"
+        android:background="@drawable/icon_buata"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_Type"
+            style="@style/CusTextViewContentTheme"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/size_text_app_title"
+            android:text="Búa tạ" />
+
+        <TextView
+            android:id="@+id/txt_Price"
+            style="@style/CusTextViewContentTheme"
+            android:layout_width="match_parent"
+            android:text="20 K/giờ"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        style="@style/CusImageIconAppTheme"
+        android:layout_marginRight="@dimen/confirm_ui_padding_w"
+        android:background="@drawable/btn_favorite"/>
+
+
+</LinearLayout>

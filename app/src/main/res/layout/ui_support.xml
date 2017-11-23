@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/lout_Support_Titile"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@color/orange">
+        <!--<Button-->
+            <!--style="?android:attr/buttonStyleSmall"-->
+            <!--android:layout_width="?attr/actionBarSize"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=""-->
+            <!--android:id="@+id/btn_Exit"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:background="@drawable/icon_back"/>-->
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/confirm_ui_padding_w"
+            android:src="@drawable/icon_back"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/CusTextViewTitleTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Hỗ trợ"
+            android:id="@+id/nav_History_Title"
+            android:layout_below="@+id/linearLayout" />
+    </RelativeLayout>
+
+    <EditText
+        style="@style/CusTextViewContentTheme"
+        android:layout_below="@+id/lout_Support_Titile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_header_height"
+        android:id="@+id/etxt_Support_Feedback"
+        android:hint="@string/nav_Support_hint"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="@drawable/button_border"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:padding="@dimen/calendarTitlePaddingTop"
+        android:layout_marginLeft="@dimen/confirm_ui_padding_h"
+        android:layout_marginRight="@dimen/confirm_ui_padding_h"
+        android:gravity="top"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_Accept"
+        android:id="@+id/btn_Support_Accept"
+        android:layout_below="@+id/etxt_Support_Feedback"
+        android:layout_marginLeft="@dimen/confirm_ui_padding_h"
+        android:layout_marginRight="@dimen/confirm_ui_padding_h"
+        android:background="@drawable/ripple_selector_yellow"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Hoặc"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:id="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_Support_Accept"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/call_support"
+        android:id="@+id/btn_Call_Support"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="@dimen/confirm_ui_padding_h"
+        android:layout_marginRight="@dimen/confirm_ui_padding_h"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/ripple_selector_yellow"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:padding="@dimen/calendarTitlePaddingTop"
+    android:background="@color/orange">
+    <TextView
+        style="@style/CusTextViewContentTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/nav_Support_Secret_Policy"
+        android:textColor="@color/color_transparent_blue_dark"
+        android:id="@+id/txt_Secret_Policy"
+        android:layout_toLeftOf="@+id/txt_and"
+        />
+    <TextView
+        style="@style/CusTextViewContentTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="&amp;"
+        android:textColor="@color/color_transparent_blue_dark"
+        android:id="@+id/txt_and"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        style="@style/CusTextViewContentTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/nav_Support_Using_Policy"
+        android:layout_toRightOf="@+id/txt_and"
+        android:textColor="@color/color_transparent_blue_dark"
+        android:id="@+id/txt_Using_Policy" />
+</RelativeLayout>
+
+</RelativeLayout>

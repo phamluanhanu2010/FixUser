@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar_confirm" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:adjustViewBounds="true"
+                android:padding="0dp"
+                android:src="@drawable/ic_splash" />
+
+
+            <RelativeLayout
+                android:id="@+id/lout_container_title"
+                style="@style/CusBase.style.size"
+                android:layout_width="match_parent"
+                android:background="@color/orange"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="@dimen/size_icon_in_app"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_back"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/btn_login"
+                    style="@style/CusTextViewTitleTheme"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/btn_next"
+                    android:textColor="@android:color/holo_red_dark" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_description_app"
+                style="@style/CusTextViewContentThemeWhite"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/lout_container_title"
+                android:gravity="center"
+                android:paddingLeft="@dimen/confirm_ui_padding_h"
+                android:paddingRight="@dimen/confirm_ui_padding_h"
+                android:paddingTop="@dimen/confirm_ui_padding_h"
+                android:text="@string/confirm_signin_login" />
+
+            <RelativeLayout
+                android:id="@+id/lout_container_button_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/confirm_ui_padding_h"
+                android:layout_below="@+id/tv_description_app"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/lout_container_phone_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/confirm_ui_padding_h"
+                    android:layout_marginRight="@dimen/confirm_ui_padding_h"
+                    android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_phone_state"
+                        style="@style/CusTextViewContentThemeWhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:paddingLeft="@dimen/confirm_ui_padding_w"
+                        android:paddingRight="@dimen/confirm_ui_padding_w"
+                        android:text="+84"
+                        android:visibility="gone" />
+
+
+                    <EditText
+                        android:id="@+id/edt_phone_num"
+                        style="@style/CusEditTextTheme"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/confirm_info_profile_phone_num"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white">
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5sp"
+                    android:layout_below="@+id/lout_container_phone_num"
+                    android:layout_marginLeft="@dimen/confirm_ui_padding_h"
+                    android:layout_marginRight="@dimen/confirm_ui_padding_h"
+                    android:background="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    style="@style/CusEditTextTheme"
+                    android:layout_below="@+id/lout_container_phone_num"
+                    android:layout_marginLeft="@dimen/confirm_ui_padding_h"
+                    android:layout_marginRight="@dimen/confirm_ui_padding_h"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/btn_password"
+                    android:inputType="textPassword"
+                    android:maxLength="32"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white" />
+
+
+                <ImageView
+                    android:id="@+id/btn_show_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignBottom="@id/edt_password"
+                    android:layout_alignRight="@id/edt_password"
+                    android:paddingBottom="@dimen/padding"
+                    android:src="@mipmap/ic_action_action_visibility"
+                    android:text="@string/show_password"
+                    android:textAllCaps="false"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5sp"
+                    android:layout_below="@+id/edt_password"
+                    android:layout_marginLeft="@dimen/confirm_ui_padding_h"
+                    android:layout_marginRight="@dimen/confirm_ui_padding_h"
+                    android:background="@android:color/darker_gray" />
+
+
+                <TextView
+                    android:id="@+id/tv_forgot_password"
+                    style="@style/CusTextViewContentThemeWhite"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/confirm_ui_padding_h"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="@string/title_forgot_password" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_Accept"
+                style="@style/CusButtonTheme"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/confirm_ui_button_h"
+                android:layout_below="@id/lout_container_button_login"
+                android:layout_margin="@dimen/padding"
+                android:layout_marginBottom="@dimen/confirm_ui_padding_w"
+                android:background="@drawable/ripple_selector_yellow"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:text="@string/btn_next"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size_text_app_title"
+
+                />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

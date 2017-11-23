@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+
+    <com.strategy.intecom.vtc.fixuser.view.custom.imagecus.ImageViewSize
+        android:id="@+id/img_avatar"
+        android:layout_width="@dimen/size_icon_in_app_menu"
+        android:layout_height="@dimen/size_icon_in_app_menu"
+        android:padding="7dp"
+        android:src="@drawable/ic_history" />
+
+    <TextView
+        android:id="@+id/tv_search_history"
+        style="@style/CusTextViewContentTheme"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/img_avatar"
+        android:text="hello"
+        android:layout_toRightOf="@+id/img_avatar" />
+
+
+</RelativeLayout>

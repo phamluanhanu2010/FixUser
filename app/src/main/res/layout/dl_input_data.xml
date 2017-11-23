@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/time_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/confirm_ui_padding_h">
+
+    <EditText
+        android:id="@+id/etxt_input_promo"
+        style="@style/CusEditTextTheme"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/content_hint_Voucher"
+        android:inputType="text"
+        android:textSize="@dimen/size_text_app_title"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/etxt_input_description"
+        style="@style/CusEditTextTheme"
+        android:layout_height="@dimen/size_image_view_page"
+        android:gravity="top"
+        android:visibility="visible"
+        android:singleLine="false"
+        android:inputType="textMultiLine"
+        android:lines="20"
+        android:hint="@string/content_hint_Note"
+        android:padding="@dimen/confirm_ui_padding_w"
+        android:scrollbars="vertical"
+        android:textSize="@dimen/size_text_app_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_left_header_sliding"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/CusButtonTheme"
+            android:layout_width="0dp"
+            android:layout_marginRight="@dimen/confirm_ui_padding_w"
+            android:layout_weight="1"
+            android:background="@drawable/btn_ripple_grey_yellow"
+            android:padding="@dimen/padding"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/btn_Accept"
+            style="@style/CusButtonTheme"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+            android:layout_weight="1"
+            android:background="@drawable/btn_ripple_grey_yellow"
+            android:padding="@dimen/padding"
+            android:text="@string/btn_Accept" />
+    </LinearLayout>
+
+</LinearLayout>

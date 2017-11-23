@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_selector"
+    android:padding="@dimen/confirm_ui_padding_w"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/CusBase.style.size"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/confirm_ui_padding_w"
+        android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+        android:layout_marginRight="@dimen/confirm_ui_padding_w"
+        android:layout_marginTop="5.0dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/ic_warning"
+        android:gravity="center|left"
+        android:text="@string/title_dialog_message"
+        android:textSize="@dimen/size_text_app_title" />
+
+    <TextView
+        android:id="@+id/tv_message_content"
+        style="@style/CusTextViewContentTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/size_text_app_content"
+        android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+        android:layout_marginRight="@dimen/confirm_ui_padding_w"/>
+
+    <LinearLayout
+        style="@style/CusButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/confirm_ui_padding_w"
+        android:background="@drawable/btn_selector"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:textSize="@dimen/size_text_app_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/confirm_ui_padding_h"
+            android:paddingRight="@dimen/confirm_ui_padding_h"
+            android:text="@string/btn_new_job_cancel"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <TextView
+            android:id="@+id/btn_Accept"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/confirm_ui_padding_h"
+            android:paddingRight="@dimen/confirm_ui_padding_w"
+            android:text="@string/accepted"
+            android:textAllCaps="true"
+            android:textSize="@dimen/size_text_app_content"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/btn_enable_wifi"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingLeft="@dimen/confirm_ui_padding_w"-->
+            <!--android:paddingRight="@dimen/confirm_ui_padding_h"-->
+            <!--android:text="@string/open_network_settings"-->
+            <!--android:textSize="@dimen/size_text_app_content"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textColor="@android:color/holo_green_dark" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/orange"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <LinearLayout
+        android:id="@+id/lout_container_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/orange">
+
+        <ImageView
+            android:id="@+id/btn_home"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/confirm_ui_padding_w"
+            android:src="@drawable/ic_menu_home" />
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/confirm_ui_padding_w"
+            android:src="@drawable/icon_back"
+            android:visibility="visible" />
+
+
+        <RelativeLayout
+            android:id="@+id/lout_BarContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_bar_fields_icon"
+                android:layout_width="@dimen/size_icon_in_app"
+                android:layout_height="@dimen/size_icon_in_app"
+                android:layout_toLeftOf="@+id/tv_bar_fields_titile"
+                android:layout_toStartOf="@+id/tv_bar_fields_titile"
+                android:src="@drawable/icon_suanha" />
+
+            <TextView
+                android:id="@+id/tv_bar_fields_titile"
+                style="@style/CusTextViewTitleTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_icon_in_app"
+                android:layout_centerHorizontal="true"
+                android:text="SỬA NHÀ" />
+
+            <TextView
+                android:id="@+id/tv_bar_fields_content"
+                style="@style/CusTextViewContentTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_bar_fields_icon"
+                android:text="Vui lòng chọn chi tiết muốn sửa" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_Logo"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:padding="@dimen/padding"
+            android:src="@drawable/icon_logo_content" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/CusTextViewTitleTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/edt_search"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:minWidth="?attr/actionBarSize"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/confirm_ui_padding_w"
+            android:paddingRight="@dimen/confirm_ui_padding_w"
+            android:text="@string/btn_next"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/size_text_app_title"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_next"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="@dimen/confirm_ui_padding_w"
+            android:paddingTop="@dimen/confirm_ui_padding_w"
+            android:src="@drawable/ic_next_black" />
+
+
+    </LinearLayout>
+
+</android.support.design.widget.AppBarLayout>
+

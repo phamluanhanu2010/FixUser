@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    repositories {
+        mavenCentral()
+    }
+
+    defaultConfig {
+        applicationId "com.strategy.intecom.vtc.fixuser"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 2
+        versionName "1.0.2"
+        multiDexEnabled = true
+    }
+
+    sourceSets {
+        main {
+            assets.srcDir("assets")
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            debuggable true
+        }
+    }
+
+//    useLibrary 'org.apache.http.legacy'
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    //noinspection GradleCompatible
+    compile 'com.android.support:support-v4:19.1.0'
+    // Service Google
+    compile 'com.google.android.gms:play-services:7.8.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:multidex:1.0.0'
+//    // Thư viện Icon giao diện Material
+//    compile 'net.steamcrafted:materialiconlib:1.0.9'
+    // Thư viện tạo sóng âm
+    compile 'com.skyfishjy.ripplebackground:library:1.0.1'
+    // Thư viện Sliding Up to Down
+    compile 'com.sothree.slidinguppanel:library:3.3.0'
+    // Thư viện hiển thị ảnh và video
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    // Thư viện FaceBook
+//    compile 'com.facebook.android:facebook-android-sdk:4.4.+'
+    // Thư viện View Paging cho thư viện ảnh
+    compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+    //    compile 'com.android.support:cardview-v7:21.0.+'
+    //    compile 'com.android.support:recyclerview-v7:21.0.+'
+
+
+    // Thư viện Socket
+    compile ('io.socket:socket.io-client:0.7.0') {
+        // excluding org.json which is provided by Android
+        exclude group: 'org.json', module: 'json'
+    }
+
+    compile 'com.deploygate:sdk:3.1'
+}

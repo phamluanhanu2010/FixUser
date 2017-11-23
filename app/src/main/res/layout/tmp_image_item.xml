@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="@dimen/size_logo_app_h"
+        android:layout_height="@dimen/size_logo_app_h" />
+
+    <ImageView
+        android:id="@+id/img_delete"
+        android:layout_width="@dimen/size_icon_in_app"
+        android:layout_height="@dimen/size_icon_in_app"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/img_avatar"
+        android:src="@android:drawable/ic_delete" />
+</RelativeLayout>
+
+

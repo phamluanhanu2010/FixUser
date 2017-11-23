@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/lout_custom_corner"
+    android:orientation="vertical"
+    android:padding="@dimen/padding">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/padding">
+
+        <TextView
+            android:id="@+id/btn_History_VoucherID"
+            style="@style/CusTextViewContentTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_custom_bg"
+            android:paddingBottom="@dimen/drawable_padding"
+            android:paddingLeft="@dimen/confirm_ui_padding_w"
+            android:paddingRight="@dimen/confirm_ui_padding_w"
+            android:paddingTop="@dimen/drawable_padding"
+            android:text="@string/nav_History_content_VoucherID" />
+
+        <TextView
+            android:id="@+id/txt_History_Date"
+            style="@style/CusTextViewContentTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/btn_History_VoucherID"
+            android:layout_toRightOf="@+id/btn_History_VoucherID"
+            android:gravity="right"
+            android:text="Thời gian hẹn 06/06/2016, 13:00"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_transparent_back" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5sp"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_left_header_sliding"
+        android:layout_marginTop="@dimen/padding_left_header_sliding">
+
+        <TextView
+            android:id="@+id/txt_BookingShedule_Address"
+            style="@style/CusTextViewContentTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_History_content_Address"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_transparent_back"
+            android:layout_toLeftOf="@+id/txt_BookingSchedule_TypePay"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/txt_BookingSchedule_TypePay"
+            style="@style/CusTextViewContentTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/nav_History_Favarite_content_Paytype"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_transparent_back" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_BookingShedule_Custom"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/size_icon_in_app"
+            android:layout_height="@dimen/size_icon_in_app"
+            android:background="@drawable/icon_congcu_active"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/txt_BookingShedule_Custom"
+            style="@style/CusTextViewContentTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_BookingShedule_Custom"
+            android:text="@string/nav_Booking_Schedule_Content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+</LinearLayout>

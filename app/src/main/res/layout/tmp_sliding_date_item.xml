@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/lout_Date"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Thứ tư"
+        android:textSize="@dimen/size_text_app_title"
+        android:layout_gravity="center"
+        android:id="@+id/tv_DayofWeek"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="15"
+        android:textSize="@dimen/control_input_text_h"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:id="@+id/tv_DateofMonth" />
+</LinearLayout>

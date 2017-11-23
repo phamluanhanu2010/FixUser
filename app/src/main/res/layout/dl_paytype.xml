@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/paytype_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingTop="@dimen/confirm_ui_padding_w">
+
+    <TextView
+        android:id="@+id/txt_Titile"
+        style="@style/CusEditTextTheme"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/confirm_ui_padding_h"
+        android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+        android:layout_marginRight="@dimen/confirm_ui_padding_w"
+        android:background="@color/white"
+        android:text="@string/title_Paytype"
+        android:textSize="@dimen/size_text_app_title" />
+
+    <ImageView
+        android:id="@+id/btn_Exit"
+        android:layout_width="@dimen/size_icon_in_app"
+        android:layout_height="@dimen/size_icon_in_app"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/confirm_ui_padding_w"
+        android:padding="5dp"
+        android:src="@drawable/icon_huy" />
+
+
+    <Button
+        android:id="@+id/btn_Cash"
+        style="@style/CusButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/txt_Titile"
+        android:background="@drawable/selector_yellow_while"
+        android:drawableLeft="@mipmap/icon_money"
+        android:paddingLeft="@dimen/confirm_ui_padding_w"
+        android:text="@string/content_Paytype_Cash" />
+
+    <Button
+        android:id="@+id/btn_VTCPay"
+        style="@style/CusButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/btn_Cash"
+        android:background="@drawable/selector_yellow_while"
+        android:drawableLeft="@drawable/icon_thetindung"
+        android:paddingLeft="@dimen/confirm_ui_padding_w"
+        android:text="@string/content_Paytype_VTCPay"
+        android:visibility="gone"/>
+
+</RelativeLayout>

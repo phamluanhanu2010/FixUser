@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:padding="@dimen/confirm_ui_padding_w">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/padding"
+            android:minHeight="@dimen/padding"
+            android:checked="true"
+            android:button="@drawable/cb_select"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/padding"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/CusEditTextTheme"
+            android:layout_width="wrap_content"
+            android:background="@android:color/white"
+            android:ellipsize="marquee"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@id/checkBox"
+            android:layout_toStartOf="@id/checkBox"
+            android:fadingEdge="horizontal"
+            android:gravity="center|start"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textSize="@dimen/size_text_app_content"
+            android:text="alfkasf"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@android:color/darker_gray" />
+</LinearLayout>

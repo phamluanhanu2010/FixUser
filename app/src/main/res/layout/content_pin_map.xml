@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_pin_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <com.strategy.intecom.vtc.fixuser.view.custom.MyViewPager
+        android:id="@+id/content_frame_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/orange"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/btn_search_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_ripple_yellow_grey_tranparent"
+            android:padding="@dimen/confirm_ui_padding_w"
+            android:src="@mipmap/ic_btn_google" />
+
+        <ImageView
+            android:id="@+id/btn_history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_ripple_yellow_grey"
+            android:gravity="center"
+            android:padding="@dimen/confirm_ui_padding_w"
+            android:src="@mipmap/ic_btn_star" />
+
+
+        <ImageView
+            android:id="@+id/btn_pin_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_ripple_yellow_grey"
+            android:padding="@dimen/confirm_ui_padding_w"
+            android:src="@mipmap/ic_btn_pin" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_selector"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/btn_capture"
+        style="@style/CusBase.style.size"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/btn_capture"
+        android:textSize="@dimen/size_text_app_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/btn_library"
+        style="@style/CusBase.style.size"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/btn_library"
+        android:textSize="@dimen/size_text_app_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@android:color/darker_gray" />
+
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@style/CusButtonTheme"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:text="@string/btn_new_job_cancel" />
+</LinearLayout>
+
+

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar_text_next" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/confirm_ui_choose_service"
+                android:background="@drawable/ic_banner_menu"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin">
+
+                <ImageView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="@dimen/size_button_w"
+                    android:layout_height="@dimen/size_button_w"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/img_avatar" />
+
+                <ImageView
+                    android:id="@+id/img_edit_profile"
+                    android:layout_width="@dimen/size_icon_in_app"
+                    android:layout_height="@dimen/size_icon_in_app"
+                    android:layout_alignBottom="@+id/img_avatar"
+                    android:layout_alignEnd="@+id/img_avatar"
+                    android:layout_alignRight="@+id/img_avatar"
+                    android:src="@drawable/icon_suathongtin_normal" />
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/CusEditTextTheme"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:gravity="center">
+
+
+                <EditText
+                    android:id="@+id/etxt_Edit_Profile_Name"
+                    style="@style/CusEditTextTheme"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:hint="@string/nav_Edit_Profile_Name"
+                    android:inputType="text" />
+
+                <ImageButton
+                    android:id="@+id/imgbtn_Edit_Profile_Name"
+                    android:layout_width="@dimen/size_icon_in_app"
+                    android:layout_height="@dimen/size_icon_in_app"
+                    android:background="@drawable/icon_xoa"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/CusEditTextTheme"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/etxt_Edit_Profile_Phone"
+                    style="@style/CusEditTextTheme"
+                    android:layout_weight="1"
+                    android:alpha="0.5"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:hint="@string/nav_Edit_Profile_Phone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/CusEditTextTheme"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/etxt_Edit_Profile_Email"
+                    style="@style/CusEditTextTheme"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:hint="@string/nav_Edit_Profile_Email"
+                    android:inputType="textEmailAddress" />
+
+                <ImageButton
+                    android:id="@+id/imgbtn_Edit_Profile_Email"
+                    android:layout_width="@dimen/size_icon_in_app"
+                    android:layout_height="@dimen/size_icon_in_app"
+                    android:background="@drawable/icon_xoa"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_Edit_Profile_Note"
+                style="@style/CusTextViewContentTheme"
+                android:layout_width="match_parent"
+                android:layout_margin="0dp"
+                android:layout_marginTop="@dimen/confirm_ui_padding_h"
+                android:gravity="center_horizontal"
+                android:text="@string/nav_Edit_Profile_Note"
+                android:textColor="@color/color_transparent_back" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_Edit_Profile_Remove"
+            style="@style/CusButtonTheme"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_ripple_yellow_grey"
+            android:text="@string/exit"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+</LinearLayout>

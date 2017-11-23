@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_appid">631710850315464</string>
+
+    <string name="gcm_sender_id">230368964362</string>
+    <string name="gcm_apikey">AIzaSyB_EUVaNsPRefPpGNQ7MYOxXFmTG4bv2Zc</string>
+
+    <!--<string name="gcm_sender_id">746477395359</string>-->
+    <!--<string name="gcm_apikey">AIzaSyD_x4S3OfzYeshIDGgP3DTie8UaeyC2Pnk</string>-->
+
+    <!-- refer manifest file-->
+    <!--<string name="map_google_api_key">AIzaSyBLmr6POPUaI223sEefVfmJk-bq_bUHCfs</string>-->
+
+    <!--<string name="map_google_api_key">AIzaSyAri-p2TV5yyU4si0trmp9GuE75nD5AcNY</string>-->
+
+</resources>

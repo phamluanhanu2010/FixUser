@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar_search_info" />
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:gravity="bottom"
+        sothree:umanoInitialState="collapsed"
+        sothree:umanoPanelHeight="@dimen/control_input_text_h"
+        sothree:umanoScrollableView="@layout/tmp_header_sliding_content"
+        sothree:umanoShadowHeight="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.gms.maps.MapView xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.strategy.intecom.vtc.fixuser.view.fragment.FMRepairerInfo" />
+
+            <TextView
+                android:id="@+id/tv_distance"
+                style="@style/CusTextViewContentTheme"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:background="@drawable/btn_custom_bg"
+                android:padding="@dimen/confirm_ui_padding_w"
+                android:text="Km" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/tmp_header_sliding_panel" />
+
+            <include layout="@layout/tmp_header_sliding_content" />
+        </LinearLayout>
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+</LinearLayout>

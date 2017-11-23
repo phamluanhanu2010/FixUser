@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_splash"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/lout_Titile"
+        layout="@layout/app_bar_title_back"/>
+    .
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lout_Titile"
+        android:fillViewport="true"
+        android:isScrollContainer="true">
+
+        <RelativeLayout
+            android:id="@+id/lout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/confirm_ui_padding_h"
+            android:paddingLeft="@dimen/confirm_ui_padding_w"
+            android:paddingRight="@dimen/confirm_ui_padding_w">
+
+            <!--<ImageView-->
+                <!--android:id="@+id/img_avatar"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="@dimen/confirm_ui_button_option"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:padding="@dimen/confirm_ui_padding_w"-->
+                <!--android:src="@drawable/logo_app" />-->
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/CusTextViewContentTheme"
+                android:layout_below="@+id/img_avatar"
+                android:layout_marginBottom="@dimen/confirm_ui_padding_w"
+                android:layout_marginTop="@dimen/confirm_ui_padding_h"
+                android:gravity="center"
+                android:text="@string/confirm_signin_login"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_description_number"
+                style="@style/CusTextViewContentThemeWhite"
+                android:layout_width="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv_title"
+                android:layout_margin="@dimen/confirm_ui_padding_w"
+                android:gravity="center"
+                android:text="+84 94 818 77 99"
+                android:textSize="@dimen/size_text_app_title"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/lout_container_passcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_description_number"
+                android:gravity="center"
+                android:paddingLeft="@dimen/confirm_ui_padding_h"
+                android:paddingRight="@dimen/confirm_ui_padding_h">
+
+
+                <EditText
+                    android:id="@+id/edt_passcode"
+                    style="@style/CusBase.style.size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="@dimen/confirm_ui_padding_w"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="@dimen/size_text_rating"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5sp"
+                    android:layout_below="@+id/edt_passcode"
+                    android:background="@android:color/white" />
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/CusButtonTheme"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/lout_container_passcode"
+                android:layout_marginLeft="@dimen/confirm_ui_padding_h"
+                android:layout_marginRight="@dimen/confirm_ui_padding_h"
+                android:layout_marginTop="@dimen/confirm_ui_padding_h"
+                android:background="@drawable/ripple_selector_yellow"
+                android:paddingLeft="@dimen/confirm_ui_padding_h"
+                android:paddingRight="@dimen/confirm_ui_padding_h"
+                android:text="@string/btn_send_confirm" />
+
+            <TextView
+                android:id="@+id/tv_description_apps"
+                style="@style/CusTextViewContentThemeWhite"
+                android:layout_width="match_parent"
+                android:layout_below="@id/btn_submit"
+                android:gravity="bottom|center_horizontal"
+                android:paddingLeft="@dimen/confirm_ui_padding_h"
+                android:paddingRight="@dimen/confirm_ui_padding_h"
+                android:paddingTop="@dimen/confirm_ui_padding_h"
+                android:text="@string/confirm_signin_passcode" />
+
+            <Button
+                android:id="@+id/btn_passcode"
+                style="@style/CusButtonTheme"
+                android:layout_width="match_parent"
+                android:layout_below="@id/tv_description_apps"
+                android:layout_marginLeft="@dimen/confirm_ui_padding_h"
+                android:layout_marginRight="@dimen/confirm_ui_padding_h"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:background="@drawable/ripple_selector_yellow"
+                android:paddingLeft="@dimen/confirm_ui_padding_h"
+                android:paddingRight="@dimen/confirm_ui_padding_h"
+                android:text="@string/btn_get_passcode" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

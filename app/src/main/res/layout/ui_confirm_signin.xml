@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_splash"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/confirm_ui_padding_h"
+    android:paddingLeft="@dimen/confirm_ui_padding_w"
+    android:paddingRight="@dimen/confirm_ui_padding_w"
+    android:paddingTop="@dimen/confirm_ui_padding_h">
+
+    <ImageView
+        android:id="@+id/img_Logo_App"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/confirm_ui_button_option"
+        android:padding="@dimen/confirm_ui_padding_w"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_app" />
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/img_Logo_App"-->
+        <!--android:layout_width="@dimen/size_logo_app_w"-->
+        <!--android:layout_height="@dimen/size_logo_app_h"-->
+        <!--android:padding="@dimen/confirm_ui_padding_w"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:background="@drawable/logo_app" />-->
+
+    <TextView
+        style="@style/CusTextViewContentThemeWhite"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/img_Logo_App"
+        android:gravity="center"
+        android:text="@string/confirm_signin_welcome" />
+
+    <LinearLayout
+        android:id="@+id/lout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/CusTextViewContentThemeWhite"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tv_name_app"
+            android:layout_marginBottom="10.0dp"
+            android:gravity="center"
+            android:text="@string/confirm_signin_welcome_confirm" />
+
+        <LinearLayout
+            android:id="@+id/lout_container_button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--  <com.facebook.login.widget.LoginButton
+                  xmlns:facebook="http://schemas.android.com/apk/res-auto"
+                  android:id="@+id/btn_loginfb"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/confirm_ui_button_h"
+                  android:layout_marginBottom="10s.0dp"
+                  android:layout_marginLeft="5.0dp"
+                  android:layout_marginRight="5.0dp"
+                  android:textSize="@dimen/size_text_app_content"
+                  facebook:com_facebook_login_text="@string/btn_login_fb"/>
+  -->
+            <!--<Button-->
+            <!--android:id="@+id/btn_LoginFacebook"-->
+            <!--style="@style/CusButtonTheme"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/confirm_ui_button_h"-->
+            <!--android:layout_marginBottom="@dimen/activity_vertical_margin"-->
+            <!--android:background="@drawable/ripple_selector_blue"-->
+            <!--android:drawableLeft="@drawable/icon_facebook"-->
+            <!--android:drawableRight="@drawable/icon_next"-->
+            <!--android:paddingLeft="@dimen/padding"-->
+            <!--android:paddingRight="@dimen/padding"-->
+            <!--android:text="@string/btn_login"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="@dimen/size_text_app_title" />-->
+
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/CusButtonTheme"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/confirm_ui_button_h"
+                android:layout_marginBottom="@dimen/confirm_ui_padding_w"
+                android:background="@drawable/ripple_selector_yellow"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:text="@string/btn_login"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size_text_app_title" />
+
+            <Button
+                android:id="@+id/btn_signin"
+                style="@style/CusButtonTheme"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/confirm_ui_button_h"
+                android:background="@drawable/ripple_selector_yellow"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding"
+                android:paddingRight="@dimen/padding"
+                android:text="@string/btn_signin"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size_text_app_title" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

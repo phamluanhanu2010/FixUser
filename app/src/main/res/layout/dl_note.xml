@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/time_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:padding="@dimen/dialog_padding">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:id="@+id/etxt_IputVoucher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/content_hint_Note"
+        />
+
+    <Button
+        style="@style/CusButtonTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@+id/btn_Cancel"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etxt_IputVoucher"
+        android:layout_marginTop="63dp"
+        android:background="@drawable/btn_ripple_yellow_grey_corner"
+        android:layout_alignLeft="@+id/etxt_IputVoucher" />
+
+    <Button
+        style="@style/CusButtonTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_Accept"
+        android:id="@+id/btn_Accept"
+        android:layout_alignBottom="@+id/btn_Cancel"
+        android:layout_alignEnd="@+id/etxt_IputVoucher"
+        android:background="@drawable/btn_ripple_yellow_grey_corner"
+        android:layout_alignRight="@+id/etxt_IputVoucher" />
+
+</RelativeLayout>

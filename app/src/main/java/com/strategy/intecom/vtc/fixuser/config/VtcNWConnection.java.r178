@@ -1,0 +1,189 @@
+package com.strategy.intecom.vtc.fixuser.config;
+
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.os.AsyncTask;
+
+import com.strategy.intecom.vtc.fixuser.BuildConfig;
+import com.strategy.intecom.vtc.fixuser.R;
+import com.strategy.intecom.vtc.fixuser.enums.TypeActionConnection;
+import com.strategy.intecom.vtc.fixuser.enums.TypeErrorConnection;
+import com.strategy.intecom.vtc.fixuser.interfaces.RequestListener;
+import com.strategy.intecom.vtc.fixuser.utils.Utils;
+import com.strategy.intecom.vtc.fixuser.view.base.AppCore;
+
+
+/**
+ * Created by Mr. Ha on 6/2/16.
+ */
+public class VtcNWConnection extends VtcHttpConnection {
+
+    private ProgressDialog progress;
+
+    public VtcNWConnection(Context context, RequestListener requestConnection) {
+        super(context, requestConnection);
+    }
+
+    /**
+     *
+     * <d>Call when request Api server</d>
+     * <d>show dialog process</d>
+     *
+     */
+    private void initShowDialogProcess() {
+
+        initCloseDialogProcess();
+
+        progress = ProgressDialog.show(getContext(),
+                getContext().getResources().getString(R.string.title_dialog_message),
+                getContext().getResources().getString(R.string.title_dialog_process_confirm), true);
+    }
+
+    /**
+     *
+     * <d>Call when request Api server</d>
+     * <d>Dismiss dialog process</d>
+     *
+     */
+    private void initCloseDialogProcess() {
+
+        if (progress != null && progress.isShowing()) {
+
+            progress.dismiss();
+            progress = null;
+        }
+    }
+
+    /**
+     *
+     * <d>Call when wan connect server request API</d>
+     *
+     * @param actionConnection Type connection you wan request
+     * @param sAPi link Api connect to server
+     *
+     */
+    public void onExcuteProcess(TypeActionConnection actionConnection, String sAPi) {
+
+        onExcuteProcess(actionConnection, sAPi, true);
+    }
+
+    /**
+     *
+     * <d>Call when wan connect server request API</d>
+     *
+     * @param actionConnection Type connection you wan request
+     * @param sAPi link Api connect to server
+     * @param isShowProcess = true then show dialog process,
+     *                      = false then dismiss dialog process.
+     *
+     */
+    public void onExcuteProcess(TypeActionConnection actionConnection, String sAPi, boolean isShowProcess) {
+
+        ProcessConnection execute = new ProcessConnection(actionConnection, isShowProcess);
+
+        if (execute.getStatus() == AsyncTask.Status.RUNNING) {
+
+            setPoolQueue(sAPi, actionConnection);
+        } else {
+
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+//
+//                AppCore.showLog("1----Build.VERSION.SDK_INT------- : " + Build.VERSION.SDK_INT);
+//
+//                execute.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, sAPi);
+//            } else {
+
+//                AppCore.showLog("2----Build.VERSION.SDK_INT------- : " + Build.VERSION.SDK_INT);
+                execute.execute(sAPi);
+//            }
+        }
+    }
+
+    /**
+     *
+     * <d>Call when wan connect server request API</d>
+     *
+     * <d>Thread process connect and receiver data from server</d>
+     *
+     */
+    private class ProcessConnection extends AsyncTask<String, String, String> {
+
+        private TypeActionConnection actionConnection;
+        private boolean isShowProcess = true;
+
+        public ProcessConnection(TypeActionConnection actionConnection, boolean isShowProcess) {
+
+            this.actionConnection = actionConnection;
+            this.isShowProcess = isShowProcess;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            if (isShowProcess) {
+
+                initShowDialogProcess();
+            }
+
+            AppCore.showLog("---------- : onPreExecute" );
+        }
+
+        @Override
+        protected String doInBackground(String... params) {
+            String sData = "";
+
+            if(BuildConfig.DEBUG) {
+                try {
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+
+            if (Utils.isNetworkConnected(getContext())) {
+
+                if (params != null && params.length > 0) {
+
+                    AppCore.showLog("---------- : doInBackground" + params[0] );
+                    sData = initRequestConnection(params[0]);
+                }
+
+            } else {
+                // No Internet Connection
+                setErrorConnection(TypeErrorConnection.TYPE_CONNECTION_NO_INTERNET);
+            }
+
+            return sData;
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+
+            AppCore.showLog("---------- : onPostExecute");
+            if (getRequestConnection() != null) {
+
+                if (getErrorConnection() == TypeErrorConnection.TYPE_CONNECTION && !s.equals("")) {
+
+                    getRequestConnection().onPostExecuteSuccess(actionConnection);
+
+                } else {
+
+                    getRequestConnection().onPostExecuteError(getErrorConnection());
+                }
+            }
+
+            if (isShowProcess) {
+                initCloseDialogProcess();
+            }
+
+            if (getApiQueueSize() > 0) {
+
+                String sApi = getApiQueue();
+
+                onExcuteProcess(getTypeConnection(sApi), sApi);
+            }
+        }
+    }
+}

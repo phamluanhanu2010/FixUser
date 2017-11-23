@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/lout_custom_corner"
+    android:orientation="vertical"
+    android:padding="@dimen/padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_History_VoucherID"
+            style="@style/CusTextViewContentTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_custom_bg"
+            android:paddingBottom="@dimen/drawable_padding"
+            android:paddingLeft="@dimen/confirm_ui_padding_w"
+            android:paddingRight="@dimen/confirm_ui_padding_w"
+            android:paddingTop="@dimen/drawable_padding"
+            android:text="@string/nav_History_content_VoucherID" />
+
+        <TextView
+            android:id="@+id/txt_History_Date"
+            style="@style/CusTextViewContentTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:gravity="right"
+            android:text="06/06/2016, 13:00"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5sp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dayOfMonthImageMarginTop"
+        android:layout_marginTop="@dimen/padding"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_type"
+            android:layout_width="@dimen/size_icon_in_app"
+            android:layout_height="@dimen/size_icon_in_app"
+            android:background="@drawable/icon_congcu_active" />
+
+        <TextView
+            android:id="@+id/txt_History_Custom"
+            style="@style/CusTextViewTitleTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_History_content_Custom" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_History_Address"
+            style="@style/CusTextViewContentTheme"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding"
+            android:text="@string/nav_History_content_Address"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</LinearLayout>

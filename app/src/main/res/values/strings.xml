@@ -1,0 +1,260 @@
+<resources>
+
+    <string name="app_name">SUADO</string>
+
+    <string name="navigation_drawer_open">Mở Menu</string>
+    <string name="navigation_drawer_close">Đóng Menu</string>
+
+    <string name="action_settings">Cài đặt</string>
+    <string name="nav_item_History">Lịch sử</string>
+    <string name="nav_item_Favorite">Yêu thích</string>
+    <string name="nav_item_Reservation">Lịch đặt</string>
+    <string name="nav_item_Notification">Thông báo</string>
+    <string name="nav_item_Invite">Mời bạn bè</string>
+    <string name="nav_item_Support">Hỗ trợ</string>
+    <string name="nav_item_Tool_for_rent">Cho thuê công cụ - Sửa chữa</string>
+
+    <string name="nav_History_Title">Cho thuê công cụ - Sửa chữa</string>
+    <string name="nav_History_content_Address">Địa chỉ nhận thuê sửa đồ</string>
+    <string name="nav_History_content_Custom">Thuê công cụ</string>
+    <string name="nav_History_content_VoucherID">Mã KM</string>
+    <string name="nav_History_Favarite_content_Address">Địa chỉ nhận thuê/sửa đồ</string>
+    <string name="nav_History_Favarite_content_Paytype">Thanh toán:  Tiền mặt</string>
+    <string name="nav_History_Favarite_content_Toolrent">Thuê công cụ - công cụ 1, công cụ 2&#8230;</string>
+    <string name="nav_item_logout">Thoát</string>
+    <string name="title_my_location">Địa điểm của tôi</string>
+    <string name="title_repairer_location">Địa điểm của thợ</string>
+
+    <string name="nav_Edit_Profile_Name">Họ và tên của bạn</string>
+    <string name="nav_Edit_Profile_Phone">0984676445</string>
+    <string name="nav_Edit_Profile_Email">Email của bạn</string>
+    <string name="nav_Edit_Profile_Note">Hóa đơn điện tử của bạn sẽ được gửi vào email này</string>
+    <string name="nav_Edit_Profile_content_Notification">Bạn chắc chắn muốn gỡ tài \nkhoản này khỏi thiết bị?</string>
+
+    <string name="nav_Notification_content">Chào mừng bạn! Đây là nội dung tin nhắn của bạn</string>
+
+    <string name="nav_Booking_Schedule_Note">Hiện không có lịch \n hẹn đặt nào</string>
+    <string name="nav_Booking_Schedule_Titile">Danh sách đặt hẹn</string>
+    <string name="nav_Booking_Schedule_Content">Thuê công cụ - Công cụ 1, công cụ 2,&#8230;</string>
+    <string name="nav_Booking_Schedule_Content_Remove">Xoá luôn khỏi danh sách</string>
+
+    <string name="nav_Support_hint">Vui lòng nhập nội dung cần hỗ trợ của bạn để gửi cho chúng tôi</string>
+    <string name="nav_Support_Secret_Policy">Chính sách bảo mật</string>
+    <string name="nav_Support_Using_Policy">Điều khoản sử dụng</string>
+    <string name="nav_Support_Version">Phiên bản ứng dụng: V1.0.1</string>
+
+    <string name="nav_Invite_Titile">MỜI LÀ CÓ QUÀ</string>
+    <string name="nav_Invite_FB">Chia sẻ link giới thiệu trên Facebook</string>
+    <string name="nav_Invite_SMS">Nhắn mã cho bạn bè để cùng nhận quà</string>
+    <string name="nav_Invite_Clipboard">Sao chép link vào Clipboard</string>
+    <string name="nav_Invite_Guide">Người đăng ký sử dụng link giới thiệu của bạn sẽ \n được nhận những quyền lợi miễn phí, và bạn cũng vậy. Thật tuyệt vời </string>
+
+    <string name="confirm_signin_passcode">Bạn không nhận được mã?</string>
+    <string name="confirm_signin_welcome">Cộng đồng chia sẻ công việc sửa chữa tại gia</string>
+    <string name="confirm_signin_login">Vui lòng nhập thông tin của bạn. Chỉ người sửa chữa kết nối với bạn thì mới thấy được</string>
+    <string name="confirm_signin_login_1">Việc bấm tiếp tục đăng ký đồng nghĩa bạn đồng ý với các điều khoản sử dụng và chính sách bảo mật</string>
+    <string name="confirm_signin_welcome_confirm">Chào bạn! Xin mời bạn!</string>
+    <string name="confirm__repairer_info_message">Chân thành cảm ơn!\nChúc bạn vui vẻ với lần đặt sau.</string>
+
+    <string name="network_not_enabled">Xin vui lòng kiểm tra kết nối Wifi/3G để có được những thông tin về công việc một cách chính xác!</string>
+    <string name="gps_not_enabled">Xin vui lòng kiểm tra  bật định vị GPS để có được những thông tin về công việc một cách chính xác!</string>
+    <string name="confirm_server_not_found">Không thể kết nối tới Server</string>
+    <string name="confirm_server_timeout">Không có phản hồi từ Server</string>
+    <string name="confirm_server_error_connect">Lỗi kết nối</string>
+
+    <string name="confirm_signin_button_option_thue">Thuê công cụ - gọi sửa chữa</string>
+    <string name="confirm_signin_button_option_cho_thue">Cho thuê công cụ - sửa chữa</string>
+
+    <string name="confirm_info_profile_full_name">Họ Tên</string>
+    <string name="confirm_info_profile_phone_num">Số điện thoại</string>
+    <string name="confirm_info_profile_email">Email</string>
+
+    <string name="btn_TranInfo_Cash">Tiền mặt</string>
+    <string name="btn_TranInfo_Now">Bây giờ luôn</string>
+    <string name="btn_TranInfo_choose_time">Chọn thời gian giao dịch</string>
+    <string name="btn_TranInfo_choose_time_warning">Vui lòng chọn thời gian giao dịch</string>
+    <string name="btn_TranInfo_Voucher">Mã KM</string>
+    <string name="btn_TranInfo_Note">Ghi chú thông tin cho người nhận</string>
+    <string name="btn_TranInfo_Fieldspicker">Chọn lĩnh vực gọi sửa chữa</string>
+    <string name="btn_TranInfo_create_order">Nhập thông tin giao dịch mới</string>
+    <string name="btn_TranInfo_Search_Hint">Vui lòng nhập địa chỉ!</string>
+    <string name="btn_TranInfo_Search">Đặt</string>
+    <string name="btn_TranInfo_Fixcall">Gọi sửa chữa</string>
+    <string name="btn_TranInfo_Rent">Thuê công cụ</string>
+    <string name="btn_capture">Chụp ảnh</string>
+    <string name="btn_library">Trong thư viện</string>
+    <string name="hint_Detail_Note">Nhập mục khác để lưu vào ghi chú cho người nhận</string>
+
+    <string name="btn_Accept">Xác nhận</string>
+    <string name="btn_new_job_cancel">Từ chối</string>
+    <string name="open_location_settings">Bật GPS</string>
+    <string name="open_network_settings">Bật Wifi/3G</string>
+
+
+    <string name="content_title_money">Phí VNĐ: %1$s VNĐ</string>
+    <string name="content_hint_Voucher">Nhập mã khuyến mãi</string>
+    <string name="content_hint_Note">Nhập ghi chú cho người nhận</string>
+    <string name="content_hint_feeback">Góp ý của bạn</string>
+    <string name="content_Paytype_Cash">Tiền mặt</string>
+    <string name="content_Paytype_VTCPay">Qua cổng thanh toán VTC</string>
+    <string name="content_FixFields_Detail">Vui lòng chọn chi tiết hạng mục muốn sửa</string>
+    <string name="content_FixFields_Detail_ImgCamera">Thêm ảnh chụp</string>
+    <string name="content_FixFields_Detail_ImgGallery">Thêm ảnh trong thư viện</string>
+    <string name="content_RentFields_Detail_Ship">Chọn phí ship chấp nhận để người cho thuê mang đến cho bạn</string>
+    <string name="content_RentFields_Detail_ShipNote">(thời gian thuê được tính từ thời điểm nhận đồ)</string>
+
+    <string name="title_Time">Chọn thời gian</string>
+    <string name="title_Paytype">Chọn hình thức thanh toán</string>
+    <string name="title_Paytype_time">Bạn có thể đặt lịch trước tối đa 7 ngày</string>
+    <string name="title_FixFields">Vui lòng chọn lĩnh vực sửa chữa</string>
+    <string name="title_bar_hangmuc">Vui lòng chọn chi tiết hạng mục muốn sửa</string>
+    <string name="title_bar_history_job">Danh sách đặt hẹn</string>
+    <string name="title_bar_history_job_all">Lịch sử</string>
+    <string name="title_bar_history_job_like">Lượt đặt yêu thích</string>
+    <string name="title_bar_info_tho">Thông tin thợ sửa</string>
+    <string name="title_bar_info_service">Hủy Dịch vụ</string>
+    <string name="title_bar_info_search">Tìm thợ sửa</string>
+    <string name="title_message_research_agency">Rất tiếc, hiện không tìm thấy chuyên gia sửa ngay. Bạn có thể đặt lịch hẹn, chuyên gia sẽ tự nhận việc và liên lạc với bạn!</string>
+    <string name="title_message_research_agency_empty">Không tìm thấy thợ sửa nào gần đây, bạn có muốn tìm kiếm mở rộng không?</string>
+    <string name="title_message_create_job_success">Chúc mừng bạn đã tạo việc thành công.\nCông việc của bạn sẽ bắt đầu vào lúc: %1$s, địa điểm: %2$s.\n Chúc bạn có những sự hợp tác vui vẻ, thành công!</string>
+    <!--<string name="confirm_info_profile_city">Thành phố</string>-->
+    <!--<string name="confirm_info_profile_service">Dịch vụ</string>-->
+    <!--<string name="confirm_info_profile_dieukhoan">Tôi đã đọc và đồng ý điều khoản này</string>-->
+    <!--<string name="confirm_info_profile_btn_register">Sẵn sàng làm việc</string>-->
+
+    <string name="btn_password">Mật khẩu</string>
+    <string name="btn_re_password">Nhập lại mật khẩu</string>
+    <string name="btn_get_passcode">Lấy lại mã xác nhận</string>
+    <string name="btn_cancel_order">Hủy đặt</string>
+    <string name="btn_ok">Ok</string>
+    <string name="btn_login">Đăng nhập</string>
+    <string name="btn_signin">Đăng ký</string>
+    <string name="btn_next">Tiếp tục</string>
+    <string name="btn_datdiachi">Đặt địa chỉ</string>
+    <string name="title_currency">%1$s <b>VNĐ</b></string>
+    <string name="title_forgot_password">Quên mật khẩu?</string>
+    <string name="btn_send_confirm">Gửi xác nhận</string>
+    <string name="title_forgot_new_password">Nhập mật khẩu mới</string>
+    <string name="title_forgot_new_re_password">Xác nhận mật khẩu mới</string>
+
+
+    <string name="title_rating_repairer">Hura, Tìm chuyên gia thành công</string>
+    <string name="title_rating_repairer_start">Yeah, Chuyên gia đến rồi!</string>
+    <string name="title_rating_repairer_start_content">Chuyên gia đã đến rồi, bạn vui lòng đón tiếp nhé</string>
+    <string name="title_rating_repairer_cancel">Hủy thành công</string>
+    <string name="title_rating_repairer_cancel_content">Chân thành cám ơn, chúc bạn sẽ vui vẻ với lần đặt sau</string>
+    <string name="title_rating_repairer_agency_cancel">Chuyên gia đã hủy</string>
+    <string name="title_rating_repairer_agency_cancel_content">Chuyên gia đã hủy công việc %1$s, xin vui lòng tạo lại và tìm chuyên gia khác</string>
+    <string name="title_rating_repairer_goto">Chuyên gia đang tới</string>
+    <string name="title_rating_repairer_close_message">Chạm để tắt thông báo này</string>
+    <string name="title_repairer_info_cancel">Vui lòng cho biết lý do hủy đặt của bạn?</string>
+    <string name="title_repairer_info_suggest">Góp ý khác của bạn</string>
+    <string name="title_repairer_info_suggest_titile">Lý do khác:</string>
+    <string name="title_repairer_infomation_cancel"> Phản hồi của bạn là vô cùng quý giá đối với chúng tôi</string>
+    <string name="title_counpon_error">Mã khuyến mại không hợp lệ</string>
+    <string name="title_confirm_code">Nhập mã xác nhận</string>
+    <string name="btn_change_password">Đổi mật khẩu</string>
+    <string name="title_confirm_code_error">Mã xác nhận nhập không chính xác</string>
+    <string name="title_old_password">Nhập mật khẩu cũ</string>
+    <string name="title_old_password_error">Nhập mật khẩu cũ không chính xác</string>
+
+    <string name="title_dialog_message">Thông báo</string>
+    <string name="title_dialog_confirm">Xác nhận</string>
+    <string name="title_dialog_process_confirm">Đang xử lý…</string>
+    <string name="title_info_new_book">Thông tin rao</string>
+    <string name="title_info_new_book_note">Ghi chú: %1$s</string>
+    <string name="title_info_new_book_price">VNĐ %1$sK</string>
+    <string name="title_info_new_book_address">Địa chỉ: %1$s</string>
+    <string name="title_info_feedback">Đánh giá chuyên gia</string>
+    <string name="title_info_toet_voi">Tuyệt vời!</string>
+    <string name="title_info_price">Tiền công dự kiến: %1$s VNĐ</string>
+
+
+    <string name="title_info_my_job_time">Thời gian hẹn: %1$s</string>
+
+    <string name="title_status_my_order_finish">Thành công</string>
+    <string name="title_status_my_order_coupon">Mã KM</string>
+    <string name="title_status_my_order_user_cancel">Người dùng đã hủy</string>
+    <string name="title_status_my_order_agency_cancel">Thợ đã hủy</string>
+    <string name="title_status_my_order_working">Đang làm</string>
+    <string name="title_status_my_order_waiting">Đang chờ</string>
+    <string name="title_status_my_order_coming">Đang đến</string>
+    <string name="title_status_my_order_ex">Hết hạn</string>
+
+    <string name="nav_item_job_history">Lịch sử</string>
+    <string name="nav_item_job_like">Yêu thích</string>
+    <string name="nav_item_job_list">Lịch đặt</string>
+    <string name="nav_item_invite">Mời bạn bè</string>
+    <string name="nav_item_support">Hỗ trợ</string>
+    <string name="nav_item_cho_thue_dung_cu">Cho thuê dụng cụ - Sửa chữa</string>
+
+
+    <string name="validate_phone_num">Số điện thoại không hợp lệ. Vui lòng thử lại</string>
+    <string name="validate_phone_num_null">Vui lòng nhập số điện thoại của bạn!</string>
+    <string name="login_phone_num_null">Vui lòng nhập số điện thoại để đăng nhập!</string>
+
+    <string name="login_password_not_correct">Mật khẩu không hợp lệ. Vui lòng thử lại!</string>
+    <string name="validate_password">Mật khẩu phải có từ 6-32 ký tự!</string>
+    <string name="changepass_validate_password">Mật khẩu mới không hợp lệ. Vui lòng thử lại mật khẩu 6 - 32 ký tự!</string>
+    <string name="validate_password_null">Vui lòng nhập mật khẩu!</string>
+    <string name="validate_re_password_null">Vui lòng nhập mật khẩu mới!</string>
+    <string name="validate_re_password">Mật khẩu mới phải trùng nhau</string>
+    <string name="validate_passcode_null">Vui lòng nhập mã xác nhận!</string>
+    <string name="validate_passcode">Vui lòng nhập mã xác nhận đã gửi vào số điện thoại của bạn</string>
+    <string name="validate_full_name_null">Vui lòng nhập Họ và tên của bạn!</string>
+    <string name="validate_full_name">Họ và tên không hợp lệ. Vui lòng thử lại!</string>
+    <string name="validate_email">Định dạng email không hợp lệ. Vui lòng thử lại!</string>
+    <string name="validate_email_null">Vui lòng nhập email</string>
+    <string name="validate_image">Bạn chưa chọn ảnh, bạn có muốn thêm ảnh sản phẩm cần sửa?</string>
+
+    <string name="validate_input_new_order">Chọn thông tin muốn rao</string>
+    <string name="validate_input_new_order_note">Nhập thông tin ghi chú</string>
+
+    <string name="validate_empty_agency">Không tìm thấy thợ sửa chữa hạng mục trên</string>
+
+    <string name="validate_max_image">Bạn chỉ được chọn 5 ảnh</string>
+    <string name="validate_reasion_empty">Vui lòng chọn hoặc nhập lý do muốn hủy</string>
+
+    <string name="validate_keep_job">Xin vui lòng đánh giá thợ!</string>
+
+    <string name="title_rating_level_1">Thợ học việc</string>
+    <string name="title_rating_level_2">Thợ cần cù</string>
+    <string name="title_rating_level_3">Thợ tốt</string>
+    <string name="title_rating_level_4">Thợ giỏi</string>
+    <string name="title_rating_level_5">Thợ xuất sắc</string>
+    <string name="title_edit_profile">Sửa thông tin cá nhân</string>
+    <string name="show_password">Hiển thị mật khẩu</string>
+    <string name="hide_password">Ẩn mật khẩu</string>
+    <string name="update_profile_avatar_error">Cập nhật ảnh đại diên bị lỗi!</string>
+    <string name="update_profile_complete">Cập nhật thông tin cá nhân thành công!</string>
+    <string name="update_profile_error">Có lỗi trong quá trình cập nhật. Xin thử lại!</string>
+
+    <string name="title_rating_review_1">Tệ quá, có vấn đề gì thế bạn?</string>
+    <string name="title_rating_review_2">Ôi, không ổn rồi!</string>
+    <string name="title_rating_review_3">Cũng được</string>
+    <string name="title_rating_review_4">Rất tốt!</string>
+    <string name="title_rating_review_5">Tuyệt vời!</string>
+    <string name="exit">Thoát tài khoản</string>
+    <string name="done">Xong</string>
+
+    <string name="title_bar_fill_order_detail">Thông tin chi tiết giao dịch</string>
+    <string name="cancel_create_order_mesage">Thông tin sẽ không được lưu. Bạn chắc chắn muốn hủy giao dịch tạo giao dịch mới ?</string>
+
+    <string name="confirm_button_change_order_time">Đặt lịch hẹn</string>
+    <string name="mesage_agency_not_come">Hệ thống nhận thấy chuyên gia chưa xác nhận đang đến thực hiện sửa chữa. Bạn có muốn liên lạc với chuyên gia?</string>
+    <string name="btn_call_agency">Gọi chuyên gia</string>
+    <string name="btn_close">Đóng</string>
+    <string name="message_agency_late">Hệ thống nhận thấy chuyên gia chưa xác nhận đã đến thực hiện sửa chữa. Bạn có muốn hủy giao dịch và đặt thợ khác sửa ngay?</string>
+    <string name="expired">Quá hạn</string>
+    <string name="btn_order_now">Đặt sửa ngay</string>
+    <string name="reason_no_accepted">Không ai nhận</string>
+    <string name="message_no_one_accept">Rất tiếc, không có chuyên gia nhận giao dịch của bạn. Bạn có muốn đặt lại giao dịch sửa ngay?</string>
+    <string name="no">Không</string>
+    <string name="yes">Có</string>
+    <string name="accepted">Đồng ý</string>
+    <string name="cancel">Hủy</string>
+    <string name="msg_no_need_voucher">Mục mà bạn chọn là miễn phí, không cần nhập thêm mã khuyến mãi.</string>
+    <string name="save">Lưu</string>
+    <string name="call_support">Gọi hỗ trợ</string>
+    <string name="pre_salary">Tiền công dự kiến :</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?android:colorControlHighlight">
+
+    <item android:id="@android:id/mask" android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+
+            <solid android:color="@color/color_transparent_back" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+            <solid android:color="@color/color_transparent_while" />
+        </shape>
+    </item>
+
+</ripple>

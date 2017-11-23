@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_transparent">#55FFFFFF</color>
+    <color name="color_transparent_back">#99000000</color>
+    <color name="color_transparent_back_22">#22000000</color>
+    <color name="color_blue">#0099CC</color>
+
+    <!-- START CALENDAR-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#222222</color>
+    <color name="day_disabled_background_color">#F1F5F8</color>
+    <color name="day_disabled_text_color">#DEDEDE</color>
+    <color name="selected_day_background">#03A7E9</color>
+    <color name="current_day_of_month">#03A7E9</color>
+    <!-- END CALENDAR-->
+
+    <color name="color_transparent_while">#99FFFFFF</color>
+
+    <color name="color_transparent_yellow_light">#55FFCB08</color>
+    <color name="color_transparent_yellow_dark">#99FFCB08</color>
+    <color name="color_transparent_yellow">#ffcb08</color>
+    <color name="color_transparent_green">#09dd54</color>
+    <color name="color_transparent_green_light">#4ce181</color>
+
+    <color name="color_transparent_blue_light">#d32a6fed</color>
+    <color name="color_transparent_blue_dark">#2a6fed</color>
+
+    <color name="orange">#ffcb08</color>
+    <color name="gray">#888</color>
+    <color name="gray_light">#CCC</color>
+
+</resources>

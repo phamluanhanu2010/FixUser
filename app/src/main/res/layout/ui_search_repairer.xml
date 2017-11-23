@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <com.skyfishjy.library.RippleBackground xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="1"
+        app:rb_color="@color/color_transparent_back"
+        app:rb_duration="2500"
+        app:rb_radius="10dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="10">
+
+        <ImageView
+            style="@style/CusImageIconAppMenuTheme"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_centerInParent="true"
+            android:background="@drawable/icon_loading"
+            android:padding="@dimen/confirm_ui_padding_h" />
+
+    </com.skyfishjy.library.RippleBackground>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="2"
+        android:gravity="bottom"
+        android:padding="5.0dp">
+
+        <include layout="@layout/tmp_waiting_search_repairer" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+</LinearLayout>

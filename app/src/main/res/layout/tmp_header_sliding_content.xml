@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/lout_container_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tv_title_message"
+                style="@style/CusTextViewContentThemeWhite"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/footer_icon_w_h"
+                android:layout_marginLeft="0dp"
+                android:background="@android:color/black"
+                android:gravity="center|center_vertical"
+                android:text="@string/title_rating_repairer_goto" />
+
+            <RelativeLayout
+                android:id="@+id/lout_Repairer_Infor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title_message"
+                android:gravity="center_vertical"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="@dimen/size_logo_app_h"
+                    android:layout_height="@dimen/size_logo_app_h"
+                    android:layout_marginLeft="@dimen/minDayCellHeight"
+                    android:layout_marginRight="@dimen/dayOfMonthImageMarginTop"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_avatar_repairer" />
+
+                <TextView
+                    android:id="@+id/tv_Repairer_Name"
+                    style="@style/CusTextViewTitleTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="@dimen/padding"
+                    android:layout_toRightOf="@+id/img_avatar"
+                    android:text="Pham Luan" />
+
+                <TextView
+                    android:id="@+id/tv_Rank"
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_below="@+id/tv_Repairer_Name"
+                    android:layout_toRightOf="@+id/img_avatar"
+                    android:text="@string/title_rating_level_1"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_Rank_Icon"
+                    android:layout_width="@dimen/size_icon_in_app"
+                    android:layout_height="@dimen/size_icon_in_app"
+                    android:layout_below="@+id/tv_Repairer_Name"
+                    android:layout_marginLeft="@dimen/padding"
+                    android:layout_toRightOf="@+id/tv_Rank"
+                    android:background="@drawable/icon_thohocviec" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/CusTextViewContentTheme"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/footer_height"
+                android:layout_below="@+id/lout_Repairer_Infor"
+                android:layout_marginLeft="0dp"
+                android:background="@color/color_transparent_back_22"
+                android:paddingLeft="@dimen/confirm_ui_padding_w"
+                android:paddingRight="@dimen/confirm_ui_padding_w"
+                android:text="Số 29 Hồng Mai, Quận Hai Bà Trưng, Hà Nội" />
+
+            <TextView
+                android:id="@+id/tv_line1"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5sp"
+                android:layout_below="@+id/tv_address"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:id="@+id/lout_Address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/footer_height"
+                android:layout_below="@+id/tv_line1"
+                android:background="@color/color_transparent_back_22"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/confirm_ui_padding_w"
+                android:paddingRight="@dimen/confirm_ui_padding_w">
+
+                <TextView
+                    android:id="@+id/tv_confirm_money"
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/pre_salary"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:id="@+id/tv_Confirm_Price"
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="1"
+                    android:hint="VNĐ 100k - 200k"/>
+
+                <ImageView
+                    android:id="@+id/img_money"
+                    android:layout_width="@dimen/size_icon_in_app"
+                    android:layout_height="@dimen/size_icon_in_app"
+                    android:src="@mipmap/icon_money" />
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_width="wrap_content"
+                    android:hint="Tiền mặt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lout_Danhmuc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/footer_height"
+                android:layout_below="@+id/lout_Address"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/confirm_ui_padding_w">
+
+                <ImageView
+                    android:id="@+id/img_danhmuc"
+                    style="@style/CusImageIconAppTheme"
+                    android:background="@drawable/icon_suanha" />
+
+                <TextView
+                    android:id="@+id/tv_danhmuc"
+                    style="@style/CusTextViewContentTheme"
+                    android:text="SỬA NHÀ"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"/>
+
+                <TextView
+                    android:id="@+id/tv_Danhmuc_Detail"
+                    style="@style/CusTextViewContentTheme"
+                    android:text="- Ốp trần" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_description"
+                style="@style/CusTextViewContentTheme"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/lout_Danhmuc"
+                android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                android:paddingRight="@dimen/confirm_ui_padding_w"
+                android:text="Ghi chú: Trần thạch cao nâng cao 20 cm" />
+
+            <LinearLayout
+                android:id="@id/lout_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_description"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lout_container_view_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_image_view_page"
+                    android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <com.viewpagerindicator.CirclePageIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lout_container_view_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_title_feedback"
+                        style="@style/CusTextViewContentTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/footer_height"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="@dimen/confirm_ui_padding_h"
+                        android:gravity="center"
+                        android:text="@string/title_info_feedback" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/CustomRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="0" />
+
+                    <TextView
+                        android:id="@+id/tv_title_toet_voi"
+                        style="@style/CusTextViewContentTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:gravity="center"
+                        android:text="@string/title_info_toet_voi"
+                        android:textStyle="italic" />
+
+
+                    <EditText
+                        android:id="@+id/edt_feeback"
+                        style="@style/CusEditTextTheme"
+                        android:layout_height="@dimen/size_image_view_page"
+                        android:layout_margin="@dimen/confirm_ui_padding_w"
+                        android:gravity="top"
+                        android:hint="@string/content_hint_feeback"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/confirm_ui_padding_w"
+                        android:textSize="@dimen/size_text_app_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@style/CusButtonTheme"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/lout_container"
+        android:layout_margin="@dimen/padding"
+        android:layout_marginTop="@dimen/confirm_ui_padding_h"
+        android:background="@drawable/btn_ripple_yellow_grey"
+        android:text="@string/btn_cancel_order" />
+</LinearLayout>

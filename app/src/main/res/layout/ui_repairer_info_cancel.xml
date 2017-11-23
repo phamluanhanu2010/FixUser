@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar_title_back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/confirm_ui_padding_w">
+
+        <TextView
+            android:id="@+id/tv_description_app"
+            style="@style/CusTextViewContentTheme"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/confirm_ui_padding_w"
+            android:text="@string/title_repairer_info_cancel" />
+
+        <TextView
+            android:id="@+id/tv_description_cancel_titile"
+            style="@style/CusTextViewContentTheme"
+            android:layout_below="@+id/tv_description_app"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/confirm_ui_padding_w"
+            android:text="@string/title_repairer_infomation_cancel" />
+
+        <LinearLayout
+            android:id="@+id/lout_container_button_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_description_cancel_titile"
+            android:orientation="vertical">
+
+
+            <!--<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--android:id="@+id/swipe_refresh_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="3">-->
+
+            <ListView
+                android:id="@+id/my_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:scrollbars="vertical" />
+            <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding"
+                android:text="@string/title_repairer_info_suggest_titile" />
+
+            <EditText
+                android:id="@+id/edt_lydo"
+                style="@style/CusEditTextTheme"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/title_repairer_info_suggest"
+                android:inputType="textMultiLine"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/btn_confirm"
+                style="@style/CusButtonTheme"
+                android:layout_width="match_parent"
+                android:background="@drawable/btn_ripple_yellow_grey"
+                android:text="@string/title_dialog_confirm" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

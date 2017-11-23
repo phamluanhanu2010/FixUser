@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lout_container_bar_title"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/orange"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_home"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/confirm_ui_padding_w"
+            android:src="@drawable/ic_menu_home" />
+
+
+        <ImageView
+            android:id="@+id/img_Logo"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:padding="@dimen/padding"
+            android:src="@drawable/icon_logo_content" />
+
+
+        <ImageView
+            android:id="@+id/btn_next"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="@dimen/confirm_ui_padding_w"
+            android:paddingTop="@dimen/confirm_ui_padding_w"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</android.support.design.widget.AppBarLayout>
+

@@ -1,0 +1,229 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                tools:context="com.strategy.intecom.vtc.fixuser.view.fragment.FMFillOrderDetail">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/app_bar_title_back"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lout_container_search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/control_input_text_h"
+                android:layout_margin="@dimen/padding"
+                android:background="@drawable/edt_background_all_corner"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ing_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/dialog_padding"
+                    android:clickable="false"
+                    android:src="@drawable/icon_addr"
+                    android:layout_marginTop="@dimen/padding"
+                    android:layout_marginBottom="@dimen/padding"
+                    android:layout_marginLeft="@dimen/padding"/>
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+                    android:layout_marginStart="@dimen/confirm_ui_padding_w"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:gravity="center|start"
+                    android:hint="@string/btn_TranInfo_Search_Hint"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_text_app_content"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/btn_Time"
+                style="@style/CusEditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_below="@id/lout_container_search"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginRight="@dimen/padding"
+                android:background="@drawable/edt_background_all_corner"
+                android:drawableStart="@mipmap/icon_time"
+                android:drawableLeft="@mipmap/icon_time"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:gravity="center|start"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingStart="@dimen/dialog_padding"
+                android:paddingLeft="@dimen/dialog_padding"
+                android:singleLine="true"
+                android:text="@string/btn_TranInfo_choose_time"/>
+
+
+            <LinearLayout
+                android:id="@+id/lout_container_button_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_Time"
+                android:layout_marginTop="@dimen/padding"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginRight="@dimen/padding"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_type"
+                    style="@style/CusEditTextTheme"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_ripple_grey_yellow_top_left"
+                    android:drawableLeft="@drawable/purcharse_tag"
+                    android:drawableStart="@drawable/purcharse_tag"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:gravity="center|start"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingLeft="@dimen/dialog_padding"
+                    android:paddingStart="@dimen/dialog_padding"
+                    android:singleLine="true"
+                    android:text="@string/btn_TranInfo_Cash"/>
+
+                <TextView
+                    android:id="@+id/btn_Voucher"
+                    style="@style/CusEditTextTheme"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_ripple_grey_yellow_top_right"
+                    android:drawableLeft="@mipmap/icon_km"
+                    android:drawableStart="@mipmap/icon_km"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:gravity="center|start"
+                    android:hint="@string/btn_TranInfo_Voucher"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingLeft="@dimen/dialog_padding"
+                    android:singleLine="true"
+                    android:textAllCaps="true"
+                    android:paddingStart="@dimen/dialog_padding"
+                    android:layout_marginLeft="-2dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/btn_Note"
+                style="@style/CusEditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/lout_container_button_option"
+                android:layout_marginTop="-2dp"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginRight="@dimen/padding"
+                android:background="@drawable/edt_background_below_corner"
+                android:drawableLeft="@mipmap/icon_ghichu"
+                android:drawablePadding="@dimen/padding"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:gravity="left|center"
+                android:hint="@string/btn_TranInfo_Note"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="@dimen/dialog_padding"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:id="@+id/lout_container_button_option_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_Note"
+                android:layout_marginTop="@dimen/padding"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginRight="@dimen/padding">
+
+                <Button
+                    android:id="@+id/imgBtn_Camera"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_ripple_grey_yellow_top_left"
+                    android:drawableLeft="@drawable/icon_take_photo"
+                    android:drawableStart="@drawable/icon_take_photo"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:text="@string/content_FixFields_Detail_ImgCamera"
+                    android:singleLine="true"
+                    android:paddingLeft="@dimen/padding"
+                    android:paddingStart="@dimen/padding"
+                    android:paddingEnd="@dimen/padding"
+                    android:paddingRight="@dimen/padding"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/imgBtn_Gallery"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_ripple_grey_yellow_top_right"
+                    android:drawableLeft="@drawable/icon_galery"
+                    android:drawableStart="@drawable/icon_galery"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:text="@string/content_FixFields_Detail_ImgGallery"
+                    android:singleLine="true"
+                    android:paddingLeft="@dimen/padding"
+                    android:paddingStart="@dimen/padding"
+                    android:paddingEnd="@dimen/padding"
+                    android:paddingRight="@dimen/padding"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="-2dp"/>
+            </LinearLayout>
+
+
+            <GridView
+                android:id="@+id/glr_image"
+                android:layout_height="@dimen/size_logo_app_h"
+                android:layout_width="match_parent"
+                android:layout_below="@id/lout_container_button_option_bottom"
+                android:numColumns="5"
+                android:visibility="visible"
+                android:horizontalSpacing="3dp"
+                android:padding="@dimen/padding"
+                android:layout_marginBottom="@dimen/padding"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginRight="@dimen/padding"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/edt_background_below_corner"/>
+
+
+            <Button
+                android:id="@+id/btn_Accept"
+                style="@style/CusButtonTheme"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/confirm_ui_button_h"
+                android:layout_marginBottom="@dimen/confirm_ui_padding_w"
+                android:layout_below="@id/glr_image"
+                android:background="@drawable/btn_ripple_yellow_grey_corner"
+                android:layout_margin="@dimen/padding"
+                android:text="@string/btn_Accept"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="@dimen/size_text_app_title"
+
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/lout_container"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/confirm_ui_padding_w">
+
+        <ImageView
+            android:id="@+id/img_Icon"
+            android:layout_height="@dimen/size_icon_in_app_menu"
+            android:padding="@dimen/padding"
+            android:layout_width="@dimen/size_icon_in_app_menu"/>
+        <ImageView
+            android:id="@+id/checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/checked"
+            android:layout_marginStart="@dimen/padding"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txt_Titile"
+            style="@style/CusTextViewTitleTheme"
+            android:layout_toRightOf="@+id/img_Icon"
+            android:layout_toLeftOf="@id/checked"
+            android:text="Sửa chữa điện nước "
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txt_Detail"
+            style="@style/CusTextViewContentTheme"
+            android:layout_below="@+id/txt_Titile"
+            android:layout_toRightOf="@+id/img_Icon"
+            android:layout_toLeftOf="@id/checked"
+            android:maxLines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="Ống nước, bể rửa, bồn cầu..." />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray" />
+</LinearLayout>

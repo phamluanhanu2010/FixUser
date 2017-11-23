@@ -1,0 +1,203 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/orange</item>
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorAccent">@android:color/transparent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- START STYLE CALENDAR -->
+    <style name="CalendarView" />
+
+    <style name="CalendarView.MonthTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarView.DayOfTheWeek">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CalendarView.DayOfTheMonth">
+        <item name="android:textSize">14sp</item>
+        <item name="android:minHeight">@dimen/minDayCellHeight</item>
+    </style>
+
+    <!-- START STYLE CALENDAR -->
+
+
+    <!-- START STYLE DIALOG -->
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+    <!--<style name="DialogTheme" parent="@android:style/Theme.Material.Light" tools:targetApi="lollipop">-->
+
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!-- START STYLE DIALOG -->
+
+
+    <!-- START STYLE RATING BAR -->
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+        <!--<item name="android:minHeight">@dimen/size_icon_in_rating</item>-->
+        <!--<item name="android:maxHeight">@dimen/size_icon_in_rating</item>-->
+    </style>
+    <!-- END STYLE RATING BAR -->
+
+
+    <!-- START STYLE SIZE APP -->
+    <style name="CusBase.style.size" parent="@android:style/Theme.Material.Light" tools:targetApi="lollipop">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/control_input_text_h</item>
+        <item name="android:textSize">@dimen/size_text_app_content</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <!-- END STYLE SIZE APP -->
+
+    <!-- START STYLE EDITTEXT -->
+    <style name="CusEditTextTheme" parent="CusBase.style.size">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@android:drawable/editbox_background_normal</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_edittext</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+    <!-- END STYLE EDITTEXT -->
+
+
+    <style name="CusEditTextThemeWhite" parent="CusBase.style.size">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@android:drawable/editbox_background_normal</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_edittext</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- START STYLE TEXTVIEW CONTENT -->
+    <style name="CusTextViewContentTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">@dimen/size_text_app_content</item>
+        <item name="android:layout_marginLeft">@dimen/confirm_ui_padding_w</item>
+    </style>
+
+    <style name="CusTextViewContentThemeWhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">@dimen/size_text_app_content</item>
+        <item name="android:layout_marginLeft">@dimen/confirm_ui_padding_w</item>
+    </style>
+    <!-- END STYLE TEXTVIEW CONTENT -->
+
+    <!-- START STYLE TEXTVIEW CONTENT LINK -->
+    <style name="CusTextViewContentLinkTheme" parent="CusTextViewContentTheme">
+        <item name="android:autoLink">all</item>
+        <item name="android:textColorLink">@android:color/holo_blue_light</item>
+    </style>
+    <!-- END STYLE TEXTVIEW CONTENT LINK -->
+
+    <!-- START STYLE TEXTVIEW TITLE -->
+    <style name="CusTextViewTitleTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">@dimen/size_text_app_title</item>
+        <item name="android:layout_marginRight">@dimen/confirm_ui_padding_w</item>
+        <item name="android:layout_marginLeft">@dimen/confirm_ui_padding_w</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- END STYLE TEXTVIEW TITLE-->
+
+    <!-- START STYLE BUTTON -->
+    <style name="CusButtonTheme" parent="CusBase.style.size">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/size_text_app_title</item>
+    </style>
+    <!-- END STYLE BUTTON-->
+
+    <!-- START STYLE BUTTON Small -->
+    <style name="CusButtonThemeSmall" parent="CusBase.style.size">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/size_text_app_content</item>
+    </style>
+    <!-- END STYLE BUTTON Small-->
+    <style name="CusButtonThemeSmallNormal" parent="CusBase.style.size">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/size_text_app_content</item>
+
+    </style>
+    <!-- START STYLE BASE IMAGE -->
+    <style name="CusImageBaseTheme">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scaleType">center</item>
+        <!--<item name="android:background">@android:color/darker_gray</item>-->
+        <item name="android:padding">@dimen/confirm_ui_padding_h</item>
+    </style>
+    <!-- END STYLE BASE IMAGE-->
+
+    <!-- START STYLE IMAGE ICON APP -->
+    <style name="CusImageIconAppTheme" parent="CusImageBaseTheme">
+        <item name="android:layout_width">@dimen/size_icon_in_app</item>
+        <item name="android:layout_height">@dimen/size_icon_in_app</item>
+    </style>
+    <!-- END STYLE IMAGE ICON APP-->
+
+
+    <!-- START STYLE IMAGE ICON APP -->
+    <style name="CusImageIconAppMenuTheme" parent="CusImageBaseTheme">
+        <item name="android:layout_width">@dimen/size_icon_in_app_menu</item>
+        <item name="android:layout_height">@dimen/size_icon_in_app_menu</item>
+    </style>
+    <!-- END STYLE IMAGE ICON APP-->
+
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/black</item>
+    </style>
+
+    <!-- for text -->
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Holo.Light.Dialog">
+    </style>
+</resources>

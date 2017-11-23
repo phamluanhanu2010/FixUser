@@ -1,0 +1,59 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+    <!--<style name="DialogTheme" parent="@android:style/Theme.Material.Light">-->
+
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="CusBase.style.size" parent="@android:style/Theme.Material.Light">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/control_input_text_h</item>
+        <item name="android:textSize">@dimen/size_text_app_content</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="CusTextViewContentTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">@dimen/size_text_app_content</item>
+        <item name="android:layout_marginLeft">@dimen/confirm_ui_padding_w</item>
+    </style>
+
+    <style name="CusTextViewTitleTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">@dimen/size_text_app_title</item>
+        <item name="android:layout_marginRight">@dimen/confirm_ui_padding_w</item>
+        <item name="android:layout_marginLeft">@dimen/confirm_ui_padding_w</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CusImageBaseTheme">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scaleType">center</item>
+        <!--<item name="android:background">@android:color/darker_gray</item>-->
+        <item name="android:padding">@dimen/confirm_ui_padding_h</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+    </style>
+</resources>
